@@ -14,4 +14,4 @@ def print_matrix_integer(matrix=[[]]):
                 print("{}".format(i))
                 count = -1
                 continue
-            print("{}".format(i), end=" ")
+            print("{:d}".format(i), end=" ")
