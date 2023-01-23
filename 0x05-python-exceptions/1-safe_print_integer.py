@@ -3,8 +3,7 @@
 def safe_print_integer(value):
     try:
         boolean = isinstance(value, int)
-	
-        if boolean == False:
+        if boolean is False:
             raise TypeError
 
         print("{:d}".format(value))
