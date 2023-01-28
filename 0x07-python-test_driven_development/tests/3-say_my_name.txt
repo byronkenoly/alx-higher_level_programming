@@ -1,0 +1,29 @@
+The ``3-say_my_name`` module
+============================
+
+Using ``say_my_name``
+---------------------
+
+This is 3-say_my_name text file.  First import
+``say_my_name`` from the ``3-say_my_name`` module:
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Testing output when two strings are passed:
+>>> say_my_name("Kanye", "West")
+My name is Kanye West
+
+
+Testing output when one string is passed:
+>>> say_my_name("Drake")
+My name is Drake 
+
+
+Testing output when first_name is not a string:
+>>> say_my_name(21, "Savage")
+first_name must be a string
+
+
+Testing output when last_name is not a string:
+>>> say_my_name("Jesus", True)
+last_name must be a string

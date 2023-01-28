@@ -1,0 +1,49 @@
+The ``0-add_integer`` module
+============================
+
+Using ``add_integer``
+---------------------
+
+This is 0-add_integer text file.  First import
+``add_integer`` from the ``0-add_integer`` module:
+	
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Testing addition of two positive integers:
+>>> print(add_integer(1, 2))
+3
+
+
+Testing addition of two negative integers:
+>>> print(add_integer(-9, -9))
+-18
+
+
+Testing addition of positive and negative integers:
+>>> print(add_integer(100, -2))
+98
+
+
+Testing addition when there's only one entry to function:
+>>> print(add_integer(2))
+100
+
+
+Testing addition when both entries are of floating type:
+>>> print(add_integer(100.3, 99.1))
+199
+
+
+Testing return when a is non-integer:
+>>> print(add_integer("Byron", 37))
+a must be an integer
+
+
+Testing return when b is non-integer:
+>>> print(add_integer(21, "Savage"))
+b must be an integer
+
+
+Testing return when both entries are non-integers:
+>>> print(add_integer("Rich", "Flex"))
+a must be an integer
