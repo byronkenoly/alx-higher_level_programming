@@ -11,7 +11,7 @@ def print_square(size):
         Args:
             size: length of square
     """
-    if isinstance(size, float) is True and size < 0:
+    if isinstance(size, float) is True and size > 0:
         size = int(size)
 
     check = isinstance(size, int)
