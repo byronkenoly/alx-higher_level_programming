@@ -1,0 +1,46 @@
+The ``4-print_square`` module
+=============================
+
+Using ``print_square``
+----------------------
+
+This is 4-print_square text file.  First import
+``print_square`` from the ``4-print_square`` module:
+
+>>> print_square = __import__('4-print_square').print_square
+
+Testing output when a positive integer is passed:
+>>> print_square(4)
+####
+####
+####
+####
+
+
+Testing output when a negative integer is passed:
+>>> print_square(-1)
+size must be >= 0
+
+
+Testing output when a float > 0 is passed:
+>>> print_square(10.4)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+
+Testing output when a float < 0 is passed:
+>>> print_square(-2.7)
+size must be an integer
+
+
+Testing output when a non-integer/float is passed:
+>>> print_square("Savage")
+size must be an integer
