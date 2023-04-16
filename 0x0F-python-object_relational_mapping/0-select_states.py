@@ -18,7 +18,7 @@ if __name__ == "__main__":
     """
     Executing MySQL queries
     """
-    all_states = cur.execute("SELECT * FROM states ORDER BY id ASC")
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
 
     """
     Print the results

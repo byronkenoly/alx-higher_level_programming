@@ -18,7 +18,7 @@ if __name__ == "__main__":
     """
     Executing MySQL queries
     """
-    all_states = cur.execute("SELECT * FROM states WHERE states.name LIKE %(name)s ORDER BY states.id ASC", {'name': sys.argv[4]})
+    cur.execute("SELECT * FROM states WHERE states.name LIKE %(name)s ORDER BY states.id ASC", {'name': sys.argv[4]})
 
     """
     Print the results
