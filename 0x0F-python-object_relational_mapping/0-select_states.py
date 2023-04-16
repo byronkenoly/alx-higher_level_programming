@@ -17,7 +17,7 @@ cur = db.cursor()
 """
 Executing MySQL queries
 """
-all_states = cur.execute("SELECT * FROM states")
+all_states = cur.execute("SELECT * FROM states ORDER BY id ASC")
 
 """
 Print the results
